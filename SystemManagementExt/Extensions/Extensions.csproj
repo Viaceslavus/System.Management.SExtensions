@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <PackageId>SystemManagement.SlvExtensions</PackageId>
+    <Version>1.0.1</Version>
+    <Authors>Viaceslavus</Authors>
+    <Product>SystemManagement.SlvExtensions</Product>
+    <Description>Simple abstraction for retrieving system memory data.</Description>
+    <PackageTags>Extensions, Library, Memory</PackageTags>
+    <PackageProjectUrl>https://github.com/Viaceslavus/System.Management.SExtensions</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/Viaceslavus/System.Management.SExtensions</RepositoryUrl>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Management" Version="5.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\..\LICENSE">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
+
+</Project>
