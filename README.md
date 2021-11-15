@@ -38,13 +38,16 @@ void Main()
 This package allows you to avoid writing code the way ``System.Management`` namespace suggests. 
 For example, using ``System.Management`` package to get the same result as with the code above, you'd likely write something like this: 
 ```csharp
-ObjectQuery wql = new ObjectQuery("SELECT * FROM Win32_OperatingSystem");
-ManagementObjectSearcher searcher = new ManagementObjectSearcher(wql);
-ManagementObjectCollection results = searcher.Get();
-
-foreach (ManagementObject result in results)
+void Main()
 {
-    Console.WriteLine("result["FreePhysicalMemory"]);
+    ObjectQuery wql = new ObjectQuery("SELECT * FROM Win32_OperatingSystem");
+    ManagementObjectSearcher searcher = new ManagementObjectSearcher(wql);
+    ManagementObjectCollection results = searcher.Get();
+
+    foreach (ManagementObject result in results)
+    {
+        Console.WriteLine("result["FreePhysicalMemory"]);
+    }
 }
 ```
 
