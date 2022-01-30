@@ -11,7 +11,7 @@
 
 Installing Nuget Package: 
 ```
-Install-Package UnityCoroutinesAnalyzer -Version 1.0.3.5
+Install-Package SystemManagement.SlvExtensions -Version 1.0.1
 ```
 
 Importing namespace:
@@ -51,4 +51,4 @@ void Main()
 }
 ```
 
-Looks not to good...
+Looks ugly...
